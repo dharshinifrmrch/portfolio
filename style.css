@@ -40,7 +40,7 @@ section{
 #home{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6)), url(stu.jpg);
+    background: linear-gradient(rgba(61, 18, 102, 0.6),rgba(59, 14, 95, 0.6)), url(stu.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
