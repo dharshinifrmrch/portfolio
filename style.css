@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+nav{
+    position: sticky !important; 
+    
+}
+h1{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 900;
+}
+nav ul li{
+     color: rgb(5, 5, 5) !important;
+     border-bottom: 2px solid transparent;
+     font-weight: 500;
+
+}
+nav ul li:hover{
+    border-bottom: 2px solid rgb(82, 35, 104);
+    transition: 1s;
+   
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6)), url(stu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(150, 235, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#home p{
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+#home p:nth-child(1){
+    animation-delay: 0s;
+}
+#home p:nth-child(2){
+    animation-delay: 3s;
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 93, 165);
+}
+.circle{
+   width: 400px;
+   height: 400px;
+   background: rgb(168, 156, 240);
+   border-radius: 50%;
+   position: relative;
+   box-shadow: 0px 5px 12px rgba(0,0,0,.4);
+    transition: 1s; 
+}
+.circle img{
+    position: absolute;
+    height: 250px;
+    top: 18%;
+    left: 19%;
+    border-radius: 50%;
+    filter:drop-shadow(0px 30px 50px rgba(0,0,0,.4)); ;
+     transition: 1s;
+}
+.circle:hover{
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.circle:hover img{
+    position: absolute;
+    left: 3%;
+    transition: 1s;
+}
+
+.circle:hover .content{
+    position: absolute;
+    color: aliceblue;
+    top: 15%;
+    width: 50%;
+    right: 2%;
+    opacity: 1;
+    transition: 1s;
+}
+
+.circle .content{
+    opacity: 0;
+}
+ 
+
+
+@media screen and (max-width:576px)
+{
+  .circle{
+   width: 400px;
+   height: 400px;
+   background: rgb(171, 159, 243);
+   border-radius: 50%;
+   position: relative;
+   box-shadow: 0px 5px 12px rgba(0,0,0,.4);
+    transition: 1s; 
+}
+.circle:hover{
+    width: 400px;
+    height: 700px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circle:hover .content{
+    position: absolute;
+    color: aliceblue;
+    top: 50%;
+    width: 92%;
+    right: 10%;
+    left: 5%;
+    opacity: 1;
+    transition: 1s;
+    line-height: 30px;
+}
+.circle:hover img{
+    position: absolute;
+    left: 20%;
+    transition: 1s;
+    top: 7%;
+}
+}
+
+.progress-bar{
+    background-color: rgb(196, 150, 240);
+}
+#skills h1{
+        padding-top: 100px;
+        letter-spacing: 2px;
+        font-size: 30px
+}
+
+.custom-btn:hover{
+    border-color: rgb(95, 31, 110);
+    background-color: transparent;
+    transition: 1s;
+    color: rgb(255, 255, 255);
+}
+
+.custom-btn{
+width: 110px; 
+height: 35px; border-radius: 50px; 
+border-color: transparent; 
+background-color: rgb(119, 60, 131);
+ margin-left: 140px;
+ color: white;
+ align-items: end;
+}
+form{
+    padding: 40px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,.2);
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
